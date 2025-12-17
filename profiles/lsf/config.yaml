@@ -1,0 +1,8 @@
+executor: lsf
+jobs: 10
+use-conda: true
+
+default-resources:
+  lsf_queue: normal
+  mem_mb: 2000
+  runtime: 30
