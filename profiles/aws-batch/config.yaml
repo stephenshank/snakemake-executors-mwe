@@ -1,8 +1,0 @@
-executor: aws-batch
-jobs: 10
-use-conda: true
-
-default-resources:
-  aws_batch_job_queue: <your-queue-arn>
-  mem_mb: 2000
-  runtime: 30

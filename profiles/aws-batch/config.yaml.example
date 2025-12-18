@@ -1,0 +1,15 @@
+executor: aws-batch
+jobs: 10
+use-conda: false  # Dependencies baked into container
+
+# Container image - set by setup script or manually
+container-image: ${ECR_URI}
+
+# S3 storage configuration
+default-storage-provider: s3
+default-storage-prefix: s3://${S3_BUCKET}/snakemake-mwe/
+
+default-resources:
+  aws_batch_job_queue: arn:aws:batch:${AWS_REGION}:${AWS_ACCOUNT_ID}:job-queue/${BATCH_JOB_QUEUE}
+  mem_mb: 2000
+  runtime: 30

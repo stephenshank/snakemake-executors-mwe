@@ -1,0 +1,16 @@
+name: base
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  # Snakemake core + plugins
+  - snakemake>=8
+  - snakemake-executor-plugin-aws-batch
+  - snakemake-storage-plugin-s3
+  # Workflow dependencies (from bioenv.yaml)
+  - python=3.11
+  - biopython=1.83
+  - seqkit
+  - pandas=2.2
+  # AWS SDK
+  - boto3

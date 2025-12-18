@@ -2,3 +2,6 @@
 results/
 __pycache__/
 *.pyc
+
+# AWS Batch config with real credentials - use config.yaml.example as template
+profiles/aws-batch/config.yaml

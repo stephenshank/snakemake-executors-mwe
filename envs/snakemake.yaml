@@ -6,3 +6,5 @@ dependencies:
   - snakemake>=8
   - snakemake-executor-plugin-lsf
   - snakemake-executor-plugin-aws-batch
+  - snakemake-storage-plugin-s3
+  - boto3
